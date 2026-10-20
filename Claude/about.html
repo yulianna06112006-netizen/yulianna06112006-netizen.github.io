@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>О нас и контакты — Вторая Эпоха</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header class="header"><div class="container">
+<a href="index.html" class="logo">Вторая Эпоха<small>VINTAGE SINCE 2015</small></a>
+<nav class="nav" id="nav"><a href="index.html">Главная</a><a href="catalog.html" >Каталог</a><a href="about.html" class="active">О нас и контакты</a></nav>
+<div class="tools"><button class="cart" aria-label="Корзина">🛍<b id="cartCount">0</b></button><button class="burger" aria-label="Меню">☰</button></div>
+</div></header>
+<main>
+<section class="section"><div class="container split" style="grid-template-columns:1fr 1fr;align-items:center">
+<div><span class="label">Наша история</span><h1 style="font-size:clamp(32px,4vw,52px);margin:12px 0 18px">Всё началось с бабушкиного сундука</h1>
+<p class="muted">В 2015 году мы разобрали бабушкин сундук и нашли там пальто, которое выглядело лучше любой новой вещи. Так появилась идея магазина.</p><br>
+<p class="muted">Сегодня мы ездим на блошиные рынки, выкупаем частные коллекции и возвращаем одежду в жизнь.</p>
+<p style="font:italic 22px 'Playfair Display';margin-top:20px">Елена, основатель</p></div>
+<div class="ph" style="height:420px;--c1:#D9A441;--c2:#8A4B3A">Елена в шоуруме</div></div></section>
+
+<section class="section alt"><div class="container center"><h2>Как мы подбираем вещи</h2>
+<div class="steps" style="text-align:left">
+<div class="step"><div class="n">1</div><h3>Поиск</h3><p class="muted">Рынки, коллекции, поставки из Европы.</p><div class="ph" style="--c1:#C98F6B;--c2:#7A4A36"></div></div>
+<div class="step"><div class="n">2</div><h3>Отбор</h3><p class="muted">Берём только вещи в хорошем состоянии.</p><div class="ph" style="--c1:#7C8F5A;--c2:#3F4D2E"></div></div>
+<div class="step"><div class="n">3</div><h3>Чистка и реставрация</h3><p class="muted">Бережная стирка, мелкий ремонт.</p><div class="ph" style="--c1:#5B7A99;--c2:#2F4256"></div></div>
+<div class="step"><div class="n">4</div><h3>Съёмка и описание</h3><p class="muted">Замеры, состав и дефекты на фото.</p><div class="ph" style="--c1:#D9A441;--c2:#B5543A"></div></div></div></div></section>
+
+<section class="section dark values"><div class="container grid g3">
+<div><div class="big">Осознанность</div><p>Покупайте реже, выбирайте лучше и носите дольше.</p></div>
+<div><div class="big">Вторая жизнь</div><p>Каждая вещь получает новую историю вместо свалки.</p></div>
+<div><div class="big">Честность</div><p>Показываем каждый дефект и называем его прямо.</p></div></div></section>
+
+<section class="section"><div class="container split"><div><h2>Частые вопросы</h2><p class="muted">Не нашли ответ? Напишите нам ниже.</p></div>
+<div class="faq">
+<details open><summary>Как понять, подойдёт ли мне размер?</summary><p>В каждой карточке есть замеры в сантиметрах. Сравните их с вашей любимой вещью.</p></details>
+<details><summary>Можно ли вернуть вещь?</summary><p>Да, в течение 7 дней, если вещь не ношена и с бирками.</p></details>
+<details><summary>Как ухаживать за винтажной одеждой?</summary><p>Стирайте вручную при 30 °C, сушите без отжима и храните на плечиках.</p></details>
+<details><summary>Принимаете ли вы вещи на комиссию?</summary><p>Да, пришлите фото через форму ниже с темой «Продать вещи».</p></details>
+<details><summary>Есть ли примерка?</summary><p>Да, в шоуруме. При доставке примерка возможна в пунктах выдачи партнёров.</p></details></div></div></section>
+
+<section class="section alt"><div class="container"><div class="contact">
+<div><h2>Свяжитесь с нами</h2><ul><li>📍 ул. Примерная, 12</li><li>📞 +7 (900) 123-45-67</li><li>✉ hello@vtoraya-epoha.ru</li><li>🕚 Вт–Вс, 11:00–20:00</li></ul>
+<a class="btn ghost" href="#">Telegram</a> <a class="btn ghost" href="#">WhatsApp</a></div>
+<form id="contactForm" novalidate>
+<div class="field"><input name="name" placeholder="Имя" aria-label="Имя"></div>
+<div class="field"><input name="email" type="email" placeholder="Email" aria-label="Email"></div>
+<div class="field"><select name="topic" aria-label="Тема"><option>Вопрос по заказу</option><option>Сотрудничество</option><option>Продать вещи</option></select></div>
+<div class="field"><textarea name="message" placeholder="Сообщение" aria-label="Сообщение"></textarea></div>
+<button class="btn" type="submit">Отправить сообщение</button><p class="msg" id="formMsg" role="status"></p></form></div></div></section>
+<div class="map"><div><b>Шоурум «Вторая Эпоха»</b><br>ул. Примерная, 12</div></div>
+</main>
+<footer class="footer"><div class="container"><div class="cols">
+<div><div class="logo">Вторая Эпоха</div><p style="margin-top:12px;color:var(--line)">Вещи с историей и стиль без срока годности.</p></div>
+<div><h4>Страницы</h4><ul><li><a href="index.html">Главная</a></li><li><a href="catalog.html">Каталог</a></li><li><a href="about.html">О нас и контакты</a></li></ul></div>
+<div><h4>Контакты</h4><ul><li>+7 (900) 123-45-67</li><li>hello@vtoraya-epoha.ru</li><li>ул. Примерная, 12</li></ul></div>
+<div><h4>Режим работы</h4><ul><li>Вт–Вс, 11:00–20:00</li><li>Пн — выходной</li></ul></div>
+</div><div class="bottom"><span>© 2026 Вторая Эпоха</span><a href="#">Политика конфиденциальности</a></div></div></footer>
+<script src="js/main.js"></script><script src="js/about.js"></script></body></html>
