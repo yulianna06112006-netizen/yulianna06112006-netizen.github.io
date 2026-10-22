@@ -197,3 +197,118 @@ ul { list-style: none; }
 .f-col h5 { font-size: 16px; font-weight: 400; margin-bottom: 0px; }
 .copy { position: absolute; bottom: 14px; width: 100%; text-align: center; font-size: 13px; }
 .copy a { text-decoration: underline; }
+
+
+/* ===== мобильная версия ===== */
+@media (max-width: 768px) {
+
+  img { max-width: 100%; }
+
+  .header {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 12px 16px;
+  }
+
+  .logo { font-size: 20px; order: 1; }
+  .nav { order: 2; gap: 14px; font-size: 14px; }
+
+  .search {
+    order: 3;
+    width: 100%;
+    margin-top: 10px;
+    height: 40px;
+  }
+
+  .search input { width: 90%; }
+
+  /* высота по пропорции картинки, иначе обрезается */
+  .hero {
+    height: 0;
+    padding-top: 40%;
+    background-size: 100% 100%;
+  }
+
+  .hero-btn {
+    left: 3.4%;
+    top: 61.7%;
+    width: 24.1%;
+    height: 9.8%;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.6vw;
+    border-radius: 20px;
+  }
+
+  .categories {
+    height: 64px;
+    padding: 0 16px;
+    overflow-x: auto;
+  }
+
+  .chip { flex-shrink: 0; }
+
+  .section { padding: 0 16px; }
+
+  .section-title {
+    font-size: 20px;
+    margin: 32px 0 20px 0;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .card { width: calc(50% - 7px); }
+  .card-img { height: 130px; padding: 10px; }
+  .card-info h4 { font-size: 14px; }
+
+  .bestsellers { margin-top: 40px; }
+
+  .features {
+    margin: 50px 16px 0;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 10px;
+    padding: 24px 10px;
+  }
+
+  .feature { font-size: 14px; }
+  .feature img { width: 60px; height: 60px; }
+
+  .about {
+    flex-direction: column;
+    height: auto;
+    padding: 60px 20px 40px;
+  }
+
+  .since { font-size: 16px; }
+  .about-text h2 { font-size: 28px; margin-top: 30px; }
+  .about-text h3 { font-size: 22px; }
+  .about-text h4 { font-size: 18px; }
+  .learn-btn { margin-top: 30px; font-size: 20px; }
+
+  .atv {
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+
+  .footer {
+    height: auto;
+    padding: 24px 20px 60px;
+  }
+
+  .footer .f-logo,
+  .f-col {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .f-col h5 { text-align: left !important; padding-right: 0 !important; }
+
+  .copy { left: 0; bottom: 18px; font-size: 12px; }
+}
