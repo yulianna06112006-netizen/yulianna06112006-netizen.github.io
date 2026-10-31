@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог — Вторая Эпоха</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">Вторая Эпоха</a>
+            <nav class="menu">
+                <a href="index.html">Главная</a>
+                <a class="active" href="catalog.html">Каталог</a>
+                <a href="about.html">О нас</a>
+            </nav>
+            <span class="cart">Корзина: <b id="cart-count">0</b></span>
+        </div>
+    </header>
+
+    <main class="container page">
+        <p class="small-title">НАШ ВЫБОР</p>
+        <h1>Каталог одежды</h1>
+        <p class="page-intro">Небольшая подборка вещей, которые могут дополнить твой гардероб.</p>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all" type="button">Все</button>
+            <button class="filter-btn" data-filter="outerwear" type="button">Верхняя одежда</button>
+            <button class="filter-btn" data-filter="jeans" type="button">Джинсы</button>
+            <button class="filter-btn" data-filter="tops" type="button">Рубашки и свитеры</button>
+            <button class="filter-btn" data-filter="accessories" type="button">Аксессуары</button>
+        </div>
+        <p class="products-count" id="products-count">Найдено вещей: 6</p>
+
+        <section class="product-grid">
+            <article class="product-card" data-category="outerwear">
+                <img src="img/catalog-1.jpg" alt="Винтажная куртка">
+                <div class="product-info"><h2>Кожаная куртка</h2><p>4 500 ₽</p><button class="button add-to-cart" type="button">В корзину</button></div>
+            </article>
+            <article class="product-card" data-category="jeans">
+                <img src="img/catalog-2.jpg" alt="Джинсы">
+                <div class="product-info"><h2>Прямые джинсы</h2><p>2 200 ₽</p><button class="button add-to-cart" type="button">В корзину</button></div>
+            </article>
+            <article class="product-card" data-category="tops">
+                <img src="img/catalog-3.jpg" alt="Свитер">
+                <div class="product-info"><h2>Тёплый свитер</h2><p>1 900 ₽</p><button class="button add-to-cart" type="button">В корзину</button></div>
+            </article>
+            <article class="product-card" data-category="tops">
+                <img src="img/catalog-4.jpg" alt="Пальто">
+                <div class="product-info"><h2>Классическое пальто</h2><p>5 000 ₽</p><button class="button add-to-cart" type="button">В корзину</button></div>
+            </article>
+            <article class="product-card" data-category="tops">
+                <img src="img/catalog-5.jpg" alt="Рубашка">
+                <div class="product-info"><h2>Свободная рубашка</h2><p>1 500 ₽</p><button class="button add-to-cart" type="button">В корзину</button></div>
+            </article>
+            <article class="product-card" data-category="accessories">
+                <img src="img/catalog-6.jpg" alt="Сумка">
+                <div class="product-info"><h2>Винтажная сумка</h2><p>2 700 ₽</p><button class="button add-to-cart" type="button">В корзину</button></div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner"><p>© 2026 Вторая Эпоха</p><p>Винтаж с новой историей</p></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

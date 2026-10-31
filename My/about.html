@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас — Вторая Эпоха</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">Вторая Эпоха</a>
+            <nav class="menu">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a class="active" href="about.html">О нас</a>
+            </nav>
+            <span class="cart">Корзина: <b id="cart-count">0</b></span>
+        </div>
+    </header>
+
+    <main class="container page">
+        <p class="small-title">НАША ИСТОРИЯ</p>
+        <h1>О магазине</h1>
+        <section class="about-layout">
+            <img src="img/about.jpg" alt="Интерьер магазина одежды">
+            <div>
+                <h2>Вещи, которые заслуживают второго шанса</h2>
+                <p>«Вторая Эпоха» — небольшой магазин винтажной одежды. Мы верим, что стиль не зависит от модных сезонов, а хорошая вещь может радовать своего владельца долгие годы.</p>
+                <p>Мы собираем интересную одежду разных эпох и помогаем ей найти новых хозяев. Для нас важны качество, индивидуальность и бережное отношение к вещам.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div>
+                <h2>Свяжитесь с нами</h2>
+                <p>Почта: hello@vtoraya-epoha.ru</p>
+                <p>Телефон: +7 (900) 123-45-67</p>
+                <p>Адрес: г. Москва, ул. Примерная, 10</p>
+            </div>
+            <form class="contact-form" id="contact-form" novalidate>
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" name="name" placeholder="Введите имя">
+                <label for="email">Электронная почта</label>
+                <input type="email" id="email" name="email" placeholder="Введите почту">
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message" rows="4" placeholder="Напишите нам"></textarea>
+                <button class="button" id="send-btn" type="button">Отправить</button>
+                <p class="form-message" id="form-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner"><p>© 2026 Вторая Эпоха</p><p>Винтаж с новой историей</p></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

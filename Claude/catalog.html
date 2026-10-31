@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Каталог — Вторая Эпоха</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header class="header"><div class="container">
+<a href="index.html" class="logo">Вторая Эпоха<small>VINTAGE SINCE 2015</small></a>
+<nav class="nav" id="nav"><a href="index.html">Главная</a><a href="catalog.html" class="active">Каталог</a><a href="about.html" >О нас и контакты</a></nav>
+<div class="tools"><button class="cart" aria-label="Корзина">🛍<b id="cartCount">0</b></button><button class="burger" aria-label="Меню">☰</button></div>
+</div></header>
+<main>
+<section class="page-head"><div class="container"><p class="crumbs"><a href="index.html">Главная</a> / Каталог</p><h1>Каталог</h1>
+<p class="lead" style="margin-top:10px">Каждая вещь существует в единственном экземпляре. Нашли своё — не откладывайте.</p></div></section>
+<div class="container shop">
+<aside class="filters" aria-label="Фильтры">
+<details open><summary>Категория</summary>
+<label><input type="checkbox" data-cat="Платья">Платья</label><label><input type="checkbox" data-cat="Верхняя одежда">Верхняя одежда</label><label><input type="checkbox" data-cat="Джинсы">Джинсы</label><label><input type="checkbox" data-cat="Рубашки и блузы">Рубашки и блузы</label><label><input type="checkbox" data-cat="Трикотаж">Трикотаж</label><label><input type="checkbox" data-cat="Аксессуары">Аксессуары</label></details>
+<details open><summary>Размер</summary><div class="sizes"><button>XS</button><button>S</button><button>M</button><button>L</button><button>XL</button></div></details>
+<details open><summary>Эпоха</summary>
+<label><input type="checkbox" data-era="1950-е">50-е</label><label><input type="checkbox" data-era="1960-е">60-е</label><label><input type="checkbox" data-era="1970-е">70-е</label><label><input type="checkbox" data-era="1980-е">80-е</label><label><input type="checkbox" data-era="1990-е">90-е</label></details>
+<details open><summary>Цена до</summary><input type="range" id="price" min="1000" max="10000" step="100" value="10000"><span id="maxLabel" class="muted"></span></details>
+<button class="reset" id="reset">Сбросить фильтры</button></aside>
+<div><div class="bar"><span id="count" role="status"></span>
+<select id="sort" aria-label="Сортировка"><option value="new">Сначала новые</option><option value="asc">Цена по возрастанию</option><option value="desc">Цена по убыванию</option><option value="pop">Популярные</option></select></div>
+<div class="grid g3" id="grid"></div></div></div>
+
+<section class="section alt"><div class="container split"><div><h2>Как подобрать размер</h2><p class="muted">Размеры на винтажных вещах не совпадают с современными. Измерьте любимую вещь, сравните с замерами в карточке и пишите нам, если сомневаетесь.</p></div>
+<div class="tbl"><table><thead><tr><th>На бирке</th><th>Сейчас</th><th>Грудь, см</th><th>Талия, см</th></tr></thead><tbody>
+<tr><td>36</td><td>XS</td><td>80–84</td><td>62–66</td></tr><tr><td>38</td><td>S</td><td>84–88</td><td>66–70</td></tr><tr><td>40</td><td>M</td><td>88–92</td><td>70–74</td></tr><tr><td>42</td><td>L</td><td>92–98</td><td>74–80</td></tr></tbody></table></div></div></section>
+
+<section class="section"><div class="container"><div class="grid g4">
+<div><h3>Доставка</h3><p class="muted">По России от 2 до 7 дней, бесплатно от 7 000 ₽.</p></div>
+<div><h3>Оплата</h3><p class="muted">Картой онлайн или при получении.</p></div>
+<div><h3>Возврат</h3><p class="muted">В течение 7 дней, если вещь не подошла.</p></div>
+<div><h3>Бережная упаковка</h3><p class="muted">Каждую вещь отпариваем и укладываем в бумагу.</p></div></div></div></section>
+</main>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Быстрый просмотр"><div class="modal-box">
+<button class="close" aria-label="Закрыть">×</button><div class="ph" id="mPh"></div>
+<div class="modal-body"><span class="era" id="mEra"></span><h2 id="mName"></h2><div class="price" id="mPrice"></div><ul id="mList"></ul>
+<button class="btn full" id="mAdd">Добавить в корзину</button></div></div></div>
+<footer class="footer"><div class="container"><div class="cols">
+<div><div class="logo">Вторая Эпоха</div><p style="margin-top:12px;color:var(--line)">Вещи с историей и стиль без срока годности.</p></div>
+<div><h4>Страницы</h4><ul><li><a href="index.html">Главная</a></li><li><a href="catalog.html">Каталог</a></li><li><a href="about.html">О нас и контакты</a></li></ul></div>
+<div><h4>Контакты</h4><ul><li>+7 (900) 123-45-67</li><li>hello@vtoraya-epoha.ru</li><li>ул. Примерная, 12</li></ul></div>
+<div><h4>Режим работы</h4><ul><li>Вт–Вс, 11:00–20:00</li><li>Пн — выходной</li></ul></div>
+</div><div class="bottom"><span>© 2026 Вторая Эпоха</span><a href="#">Политика конфиденциальности</a></div></div></footer>
+<script src="js/main.js"></script><script src="js/catalog.js"></script></body></html>
